@@ -1,6 +1,7 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroText: null
+heroImage: /FiveDogsLogo.png
 tagline: A blog full of gf beer recipes.
 actionText: Quick Start →
 actionLink: /guide/
