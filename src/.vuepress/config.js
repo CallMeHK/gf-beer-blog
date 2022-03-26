@@ -41,19 +41,37 @@ module.exports = {
         text: 'Config',
         link: '/config/'
       },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+	    {
+		    text: 'Recipes',
+		    link: '/recipes/'
+	    }
     ],
     sidebar: {
       '/guide/': [
         {
           title: 'Guide',
-          collapsable: false,
+          collapsable: true,
           children: [
             '',
             'using-vue',
+          ]
+        }
+      ],
+      '/recipes/': [
+        {
+          title: 'Recipes',
+          collapsable: false,
+          children: [
+            {
+                  title: 'Lagers',
+                  path: '/recipes/lager/',
+                  collapsable: false,
+                  children: [
+                    ['/recipes/lager/grunkles-german-pils.html', 'Grunkle\'s German Pils' ]
+                  ]
+            },
+            'recipe-1',
+            'recipe-2'
           ]
         }
       ],
